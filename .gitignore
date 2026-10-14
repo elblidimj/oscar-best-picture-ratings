@@ -1,0 +1,12 @@
+# Données : trop lourdes, re-téléchargeables (voir README)
+data/
+
+# Environnement virtuel Python : propre à chaque machine
+.venv/
+
+# Caches générés automatiquement par Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Fichiers système macOS
+.DS_Store
