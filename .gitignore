@@ -1,12 +1,12 @@
-# Données : trop lourdes, re-téléchargeables (voir README)
+# Data: too large, can be re-downloaded (see README)
 data/
 
-# Environnement virtuel Python : propre à chaque machine
+# Python virtual environment: specific to each machine
 .venv/
 
-# Caches générés automatiquement par Python / Jupyter
+# Caches generated automatically by Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
 
-# Fichiers système macOS
+# macOS system files
 .DS_Store
