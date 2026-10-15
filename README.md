@@ -25,8 +25,8 @@ pip install -r requirements.txt
 
 The data is not stored in this repository (see `.gitignore`). Create the folder `data/raw/` and place the datasets there:
 
-- MovieLens 32M: download from https://grouplens.org/datasets/movielens/ (to be completed)
-- Best Picture nominees and winners: source to be decided
+- MovieLens 32M: download `ml-32m.zip` from https://grouplens.org/datasets/movielens/ and unzip it so that the files are in `data/raw/ml-32m/` (e.g. `data/raw/ml-32m/ratings.csv`). Ratings range from 1995-01-09 to 2023-10-13.
+- Academy Awards nominees and winners: Kaggle dataset "The Oscar Award, 1927 - 2026" (`unanimad/the-oscar-award`, a scrape of the official Academy Awards Database), https://www.kaggle.com/datasets/unanimad/the-oscar-award. Downloaded on 2026-10-15 and unzipped into `data/raw/oscar_archive_1927_2025/` (files `the_oscar_award.csv` and `full_data.csv`). Content to be checked against the official database at https://awardsdatabase.oscars.org/.
 
 ## Project structure
 
