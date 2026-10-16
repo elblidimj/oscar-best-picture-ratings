@@ -15,7 +15,7 @@ Work in progress. Done: data exploration, link between the Oscar nominees and Mo
 
 - **Population**: all Best Picture nominees of the ceremonies 1996 to 2017 (142 films, 22 winners). MovieLens starts in 1995 and its last full year is 2022.
 - **Link between the two sources**: each nominee is matched to its MovieLens `movieId` through its IMDb id (all 142 found), then checked against the titles and years.
-- **Analysis window (under discussion)**: candidate Y = ceremony year to ceremony year + 5 (6 calendar years), with X = ceremony year + 1 to + 5 as a robustness check. Every nominee was released the year before the ceremony, so the ceremony year is the first complete calendar year after release.
+- **Analysis window (under discussion)**: from the ceremony year to the ceremony year + 5 (6 calendar years). Every nominee was released the year before the ceremony, so the ceremony year is the first complete calendar year after release.
 - **Measure**: average rating per film and per year of rating (UTC), with the number of ratings. The minimum number of ratings per film and year is under discussion (candidates: 50, with 100 as a robustness check).
 - **Comparison**: each winner is compared with the nominees of the same ceremony, because the number of nominees changes from 5 to 10.
 
