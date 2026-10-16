@@ -5,7 +5,7 @@ A data science study based on MovieLens 32M ratings and Best Picture Oscar recor
 ## Research questions
 
 1. Do Best Picture winners maintain their audience ratings better over time than nominated films that did not win?
-2. Do Best Picture winners remain the highest-rated films among their fellow nominees years after the ceremony?
+2. Does the position of the Best Picture winner among the nominees of its ceremony (ranked by average rating) improve, stay or get worse over the years after the ceremony?
 
 ## Status
 
