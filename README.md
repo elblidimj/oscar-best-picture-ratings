@@ -75,3 +75,4 @@ reports/figures/ final figures (empty for now)
 - A rating timestamp records when a rating was submitted, not necessarily when the film was watched. Some users rate many films at the same second (bulk rating), which suggests ratings of films seen long before.
 - The audience that rates a film changes over time, so a change in the average rating does not necessarily mean that the film changed.
 - Only 22 winners are available, so the study has limited statistical power.
+- A very popular film may be rated by a different audience than a little-known one. This is a bias, not noise, and weighting by the number of ratings does not remove it. Each winner is compared with the nominees of the same ceremony, and we check whether popularity (total number of ratings) explains the differences. It remains a limitation of the study.
