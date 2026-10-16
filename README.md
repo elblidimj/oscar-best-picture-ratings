@@ -15,8 +15,8 @@ Work in progress. Done: data exploration, link between the Oscar nominees and Mo
 
 - **Population**: all Best Picture nominees of the ceremonies 1996 to 2017 (142 films, 22 winners). MovieLens starts in 1995 and its last full year is 2022.
 - **Link between the two sources**: each nominee is matched to its MovieLens `movieId` through its IMDb id (all 142 found), then checked against the titles and years.
-- **Main analysis window**: from the ceremony year to the ceremony year + 5 (6 calendar years). Every nominee was released the year before the ceremony, so the ceremony year is the first complete calendar year after release. Robustness check: ceremony year + 1 to + 5.
-- **Measure**: average rating per film and per year of rating (UTC), with the number of ratings. Minimum of 50 ratings per film and year (robustness check with 100).
+- **Analysis window (under discussion)**: candidate Y = ceremony year to ceremony year + 5 (6 calendar years), with X = ceremony year + 1 to + 5 as a robustness check. Every nominee was released the year before the ceremony, so the ceremony year is the first complete calendar year after release.
+- **Measure**: average rating per film and per year of rating (UTC), with the number of ratings. The minimum number of ratings per film and year is under discussion (candidates: 50, with 100 as a robustness check).
 - **Comparison**: each winner is compared with the nominees of the same ceremony, because the number of nominees changes from 5 to 10.
 
 Working assumption: a rating given in year *t* is treated as a viewing in year *t* (see Limitations).
@@ -47,7 +47,7 @@ Run the notebooks in this order from the `notebooks/` folder (each one is read-o
 | `01_explore_movielens.ipynb` | first look at MovieLens (size, period, scale, titles) | none |
 | `02_explore_oscars.ipynb` | first look at the Oscars file, how Best Picture is labelled | none |
 | `03_match_oscars_movielens.ipynb` | links the 142 nominees to MovieLens by IMDb id and checks the match | `data/processed/best_picture_nominees_1996_2017.csv` |
-| `04_yearly_ratings.ipynb` | number of ratings and average rating per film and year, thresholds, analysis window | `data/processed/film_year_window_Y.csv` |
+| `04_yearly_ratings.ipynb` | number of ratings and average rating per film and year (work in progress: the analysis window and the minimum number of ratings are being discussed again) | none for now |
 
 ## Scripts
 
