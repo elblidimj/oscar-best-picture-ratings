@@ -49,13 +49,23 @@ Run the notebooks in this order from the `notebooks/` folder (each one is read-o
 | `03_match_oscars_movielens.ipynb` | links the 142 nominees to MovieLens by IMDb id and checks the match | `data/processed/best_picture_nominees_1996_2017.csv` |
 | `04_yearly_ratings.ipynb` | number of ratings and average rating per film and year, thresholds, analysis window | `data/processed/film_year_window_Y.csv` |
 
+## Scripts
+
+From the project root, once the raw data is in `data/raw/`:
+
+```bash
+.venv/bin/python src/build_nominees_table.py    # writes data/processed/best_picture_nominees_1996_2017.csv
+```
+
+The script stops with an error message if the table does not have 142 nominees, 22 winners and a MovieLens `movieId` for every film. More scripts will be added as the steps of the notebooks become stable.
+
 ## Project structure
 
 ```
 data/raw/        original downloaded data, never modified
 data/processed/  tables produced by the notebooks
 notebooks/       exploration and data preparation
-src/             reusable scripts (empty for now)
+src/             scripts that rebuild the processed tables
 reports/figures/ final figures (empty for now)
 ```
 
